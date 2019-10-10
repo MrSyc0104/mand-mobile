@@ -7,7 +7,7 @@
       :step="10"
       :lines="5"
       :format="format"
-      :labels="['周一', '周二', '周三', '周四', '周五', '周六', '周日']"
+      :labels="['周一', '周日']"
       :datasets="[
         {
           color: '#5e64ff',
@@ -20,7 +20,8 @@
 	</div>
 </template>
 
-<script>import {Chart} from 'mand-mobile'
+<script>
+import {Chart} from 'mand-mobile'
 
 export default {
   name: 'chart-demo',
@@ -38,7 +39,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus" scoped>
   svg
